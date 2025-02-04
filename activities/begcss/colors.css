@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: brown;
+}
+.underline {
+    text-decoration: underline;
+}
+
+.itallic {
+    font-style: stallic;
+}
+
+footer p {
+    color: blueviolet;
+}
+
+#firstpar {
+    color: aquamarine;
+}
+
+.blue{
+    font-size: 16pt;
+}
