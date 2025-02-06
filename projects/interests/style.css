@@ -1,8 +1,37 @@
 body{
-    font-family: ;
-    color: ;
-    font-size: ;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(177, 124, 226);
+    
+}
+.underline{
+    text-decoration: underline;
 }
 
-#
-.
+.itallic{
+    font-style: oblique;
+}
+h1{
+    color: rgb(240, 240, 29);
+}
+p{
+    color: rgb(68, 57, 57);
+}
+
+footer p{
+    color: rgb(24, 24, 204);
+}
+
+#firstpar{
+    color: beige;
+}
+
+.blue{
+    font-size: 18pt;
+}
+#ul1{
+    color: rgb(240, 240, 29);
+}
+#ul2{
+    color: rgb(68, 57, 57); 
+
+}
