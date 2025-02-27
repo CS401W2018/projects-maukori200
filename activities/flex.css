@@ -1,0 +1,28 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    display: flex;
+    background-color: yellowgreen;
+    justify-content: space-around;
+}
+
+nav a{
+    display: block;
+    background-color: greenyellow;
+    color: orangered;
+    padding: 10px;
+}
+
+.parent{
+    background-color: brown;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+}
+
+.child{
+    background-color: bisque;
+    margin: 10px;
+}
