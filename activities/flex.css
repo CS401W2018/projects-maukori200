@@ -10,7 +10,7 @@ nav{
 
 nav a{
     display: block;
-    background-color: greenyellow;
+    background-color: rgb(139, 211, 31);
     color: orangered;
     padding: 10px;
 }
@@ -26,3 +26,4 @@ nav a{
     background-color: bisque;
     margin: 10px;
 }
+

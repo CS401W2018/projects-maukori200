@@ -1,0 +1,55 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    gap:4px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a{
+    display: block;
+    padding: 10px;
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "tenii teben teben teben";
+}
+
+.tenii{
+    grid-area: tenii;
+}
+.teben{
+    grid-area: teben;
+}
+.neiko{
+    display:flex;
+    flex-direction: row;
+    gap:20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.wrapper{
+    border: solid 1px;
+    box-shadow: 5px 10px black;
+    width: 25%;
+}
+img{
+    width:100%
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 30px;
+}
