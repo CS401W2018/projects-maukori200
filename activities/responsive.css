@@ -1,0 +1,50 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: bisque;
+}
+
+header h1{
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(126, 14, 231);
+}
+
+nav a{
+    display: block;
+    padding: 10px;
+    background-color: rgb(102, 73, 34);
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    color: blue;
+    background-color: brown;
+}
+
+main{
+    display: ;
+}
+
+
+.card{
+    border: thin solid;
+    box-shadow: 3px 3px 3px;
+    width: 250px;
+}
+
+.card figure{
+    margin: 0;
+}
+
+.card img{
+    width: 100%;
+}
