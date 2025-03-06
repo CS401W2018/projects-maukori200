@@ -1,0 +1,91 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: bisque;
+}
+
+header h1{
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(126, 14, 231);
+}
+
+nav a{
+    display: block;
+    padding: 10px;
+    background-color: rgb(102, 73, 34);
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    color: blue;
+    background-color: brown;
+}
+
+main{
+    
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.card{
+    border: thin solid;
+    box-shadow: 3px 3px 3px;
+    width: 250px;
+}
+
+.card figure{
+    margin: 0;
+}
+
+.card img{
+    width: 100%;
+}
+
+@media ONLY screen AND (max-width: 900px){
+    .row{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        margin-bottom: 20px;
+        width: 90%;
+    }
+
+    .feature{
+        order: -1;
+    }
+
+}
+
+@media only screen and (max-width: 600px){
+    header{
+        background-color: rgb(221, 140, 18);
+    }
+
+    nav{
+        flex-direction: column;
+    }
+
+    nav a{
+        border-bottom: thin solid cornflowerblue;
+    }
+
+    .card{
+        margin-bottom: 20px;
+    }
+
+}
