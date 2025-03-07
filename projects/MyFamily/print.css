@@ -17,10 +17,6 @@ nav a:hover{
     background-color: brown;
 }
 
-main{
-    
-}
-
 .row{
     display: flex;
     justify-content: space-between;
