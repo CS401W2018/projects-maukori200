@@ -10,19 +10,6 @@ header h1{
     margin: 0;
 }
 
-nav{
-    display: flex;
-    justify-content: space-evenly;
-    background-color: rgb(126, 14, 231);
-}
-
-nav a{
-    display: block;
-    padding: 10px;
-    background-color: rgb(102, 73, 34);
-    color: white;
-    text-decoration: none;
-}
 
 nav a:hover{
     text-decoration: underline;
