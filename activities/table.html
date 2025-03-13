@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tables</title>
+    <link rel="stylesheet" href="table.css">
 </head>
 <body>
     <header>
         <h1>Web Design</h1>
     </header>
     <main>
-        <table border="1">
+        <h1>Table</h1>
+        <table class="schedule">
+            <caption>Course Schedule</caption>
             <thead>
                 <tr>
                     <th>Department</th>
@@ -81,6 +84,12 @@
     <p>when the table dosen't add value to the presentation</p>
     <h2>When do you need to do extra work for table accessibility?</h2>
     <p>when you decide to have tables with multiple levels of headers that are already span in multiple rows and columns.</p>
+
+    <h1>Questions</h1>
+    <h2>Why don't we use the border attribute?</h2>
+    <p>because the border attribute directly embedded into HTML dosen't allow for as much flexibility over styling as CSS does. </p>
+    <h2>What is the easiest way to color every other row a different color?</h2>
+    <p>use the :nth-child(even) or :nth-child(odd)</p>
     <footer>
         <p>&copy; 2025 Nakau Maunana</p>
     </footer>
