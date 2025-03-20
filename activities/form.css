@@ -1,3 +1,48 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
+
+fieldset{
+    background-color: orangered;
+}
+
+legend{
+    background-color: rgb(204, 195, 178);
+    color: white;
+    padding: 20px;
+}
+
+.form-row input:not([type="submit"]){
+    padding: 5px;
+    border-radius: 5px;
+    background-color: aqua;
+}
+
+.form-row{
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.radio-row{
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.form-row label{
+    width: 150px;
+    text-align: right;
+}
+
+.form-spacer{
+    width: 150px;
+    text-align: right;
+}
+
+@media ONLY screen and (max-width: 600px) {
+    .form-row, .radio-row {
+        flex-direction: column;
+    }
+}
+
