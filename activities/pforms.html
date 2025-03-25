@@ -8,11 +8,12 @@
 </head>
 <body>
     <header><h1>Web design</h1></header>
+    
     <main>
-        <form action="processing.html" method="get">
+        <form action="processing.html" method="get" id="myForm">
             <fieldset>
                 <div class="form-row">
-                    First Name:<input type="text" name="firstname" placeholder="First Name">
+                    First Name:<input type="text" name="firstname" placeholder="First Name" id="fullname">
                 </div>
                 <div class="form-row">
                     Email: <input type="email" name="Email">
@@ -47,10 +48,46 @@
                 </div>
         </fieldset>
         </form>
+
+        <h1>Questions</h1>
+        <h2>What is JavaScript? How did it get its name?</h2>
+        <p>it is a scripting language used to make web pages interactive</p>
+        <h2>What are the two ways you can run JavaScript?</h2>
+        <p>you can run in the browser and in the DOM</p>
+        <H2>What was the most popular front-end js library?</H2>
+        <P>JQuery</P>
+        <h2>What is the most popular front-end js library today?</h2>
+        <p>React.js</p>
+
        
     </main>
     <footer>
         <p>&copy;2025 Nakau Maunana</p>
     </footer>
+    <script>
+        document.getElementById('myForm').addEventListener('submit',function(event){
+            event.preventDefault();
+            alert("Firn Syubmitted");
+
+            const fullname = document.getElementById('fullname').value;
+            const email = document.getElementById('email').value;
+            const pass = document.getElementById('pass').value;
+
+            if (fullname) {
+                alert:("You need to enter your own.");
+                return;
+            }
+
+            const formData = {
+                fullname: fullname,
+                email: email,
+                password: pass
+            }
+
+            console.log(fullname);
+
+
+        });
+    </script>
 </body>
 </html>
