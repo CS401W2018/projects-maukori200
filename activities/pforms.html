@@ -7,16 +7,14 @@
     <link rel="stylesheet" href="pforms.css">
 </head>
 <body>
-    <header><h1>Web design</h1></header>
-    
+    <header>
+        <h1>Web design</h1>
+    </header>
     <main>
-        <form action="processing.html" method="get" id="myForm">
-            <fieldset>
-                <div class="form-row">
-                    First Name:<input type="text" name="firstname" placeholder="First Name" id="fullname">
-                </div>
-                <div class="form-row">
-                    Email: <input type="email" name="Email">
+        <form action="processing.html" method="post" id="myForm">
+                First Name:<input type="text" name="firstname" placeholder="First Name" id="first">
+                Last Name; <input type="text" id="lastname" name="last">
+                Email: <input type="email" name="Email">
                 </div>
                 <div class="form-row">
                     <label for="pass">Password:</label>
@@ -59,6 +57,12 @@
         <h2>What is the most popular front-end js library today?</h2>
         <p>React.js</p>
 
+        <h1>Question</h1>
+        <h2>What is AJAX?</h2>
+        <p>group of technologies that are used to develop web</p>
+        <h2>Why do you put your JS Code in a separate file?</h2>
+        <p>to seperate JavaScript into it own file helps with clarity,efficiency and performance</p>
+
        
     </main>
     <footer>
@@ -84,8 +88,18 @@
                 password: pass
             }
 
-            console.log(fullname);
-
+            console.log(formData);
+            const xhr = new XMLHttpRequest();
+            xhr.open("GET", "submit.json", true);
+            xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    alert('Form submitted seccessfully.');
+                } else if (xhr.readyState === 4) {
+                    alert('Error submitting form.');
+                }
+            };
+            xhr.send(JSON.stringify(formData));
 
         });
     </script>
