@@ -11,97 +11,60 @@
         <h1>Web design</h1>
     </header>
     <main>
+        <div id="message"></div>
         <form action="processing.html" method="post" id="myForm">
-                First Name:<input type="text" name="firstname" placeholder="First Name" id="first">
-                Last Name; <input type="text" id="lastname" name="last">
-                Email: <input type="email" name="Email">
+            <fieldset>
+                <div class="form-row">
+                    <label for="firstname">FirstName:</label>    
+                    <input type="text" name="firstname" placeholder="First Name" id="firstname">
                 </div>
                 <div class="form-row">
-                    <label for="pass">Password:</label>
-                    <input type="password" name="password" id="pass">
+                    <label for="lastname">LastName:</label>
+                    <input type="text" id="lastname" name="lastname" id="lastname">
+                </div>
+                <div class="form-row">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div class="form-row">
+                    <label for="Remember">Remember Me</label>
+                    <input type="checkbox" name="Remember" checked id="Remember">
+                </div>
+                <div class="form-row">
+                    <label for="age">Age:</label>
+                    <input type="number" name="age" id="age"><br>
+                </div>
+                <div class="form-row">
+                    <label for="class">Class:</label>
+                    <input type="radio" value="Freshman">freshman<br>
+                    <input type="radio" value="sopgomore">sophomore<br>
+                    <input type="radio" value="junior">junior<br>
+                    <input type="radio" value="senior">senior<br>
                 </div>
                 <div class="form-row">
                     <label for="state">State:</label>
-                    <select name="state" id="state">
-                        <option value="blank">None</option>
-                        <option value="Co">Colorado</option>
+                    <select name="state" id="state"></select>
+s                        <option value="blank">make selection</option>
                         <option value="HI" selected>Hawaii</option>
+                        <option value="ca">California</option>
+                        <option value="Co">Colorado</option>
                         <option value="UT">Utah</option>
                     </select>
                 </div>
-                <div class="radio-row">
-                    <div class="form-spacer">Year in School:</div>
-                    <label><input type="radio" name="year" value="Freshman">Freshman </label>
-                    <label><input type="radio" name="year" value="sophmore" checked >sophmore</label>
-                </div>
-                <div>
-                    <label><input type="checkbox" name="agree" id="agree" checked >Remember me</label>
+                <div class="form-row">
+                    <label for="comment">Comment: </label>
+                    <textarea name="comment" id="comment"></textarea>
                 </div>
                 <div class="form-row">
-                    <label for="comments">Comments</label>
-                    <textarea name="comments" id="comments"></textarea>
+                    <div class="spacer"></div>
+                    <input type="submit" value="Sign up!" id="submit">
                 </div>
-                <div class="form-row">
-            <input type="submit">
-                </div>
-        </fieldset>
-        </form>
-
-        <h1>Questions</h1>
-        <h2>What is JavaScript? How did it get its name?</h2>
-        <p>it is a scripting language used to make web pages interactive</p>
-        <h2>What are the two ways you can run JavaScript?</h2>
-        <p>you can run in the browser and in the DOM</p>
-        <H2>What was the most popular front-end js library?</H2>
-        <P>JQuery</P>
-        <h2>What is the most popular front-end js library today?</h2>
-        <p>React.js</p>
-
-        <h1>Question</h1>
-        <h2>What is AJAX?</h2>
-        <p>group of technologies that are used to develop web</p>
-        <h2>Why do you put your JS Code in a separate file?</h2>
-        <p>to seperate JavaScript into it own file helps with clarity,efficiency and performance</p>
-
-       
+            </fieldset>
+        </form> 
     </main>
     <footer>
-        <p>&copy;2025 Nakau Maunana</p>
+        <p>&copy; 2025 Nakau Maunana</p>
     </footer>
-    <script>
-        document.getElementById('myForm').addEventListener('submit',function(event){
-            event.preventDefault();
-            alert("Firn Syubmitted");
-
-            const fullname = document.getElementById('fullname').value;
-            const email = document.getElementById('email').value;
-            const pass = document.getElementById('pass').value;
-
-            if (fullname) {
-                alert:("You need to enter your own.");
-                return;
-            }
-
-            const formData = {
-                fullname: fullname,
-                email: email,
-                password: pass
-            }
-
-            console.log(formData);
-            const xhr = new XMLHttpRequest();
-            xhr.open("GET", "submit.json", true);
-            xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState === 4 && xhr.status === 200) {
-                    alert('Form submitted seccessfully.');
-                } else if (xhr.readyState === 4) {
-                    alert('Error submitting form.');
-                }
-            };
-            xhr.send(JSON.stringify(formData));
-
-        });
-    </script>
+    <script src="pforms.js"></script>
 </body>
 </html>
