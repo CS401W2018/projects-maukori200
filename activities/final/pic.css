@@ -1,0 +1,30 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(10, 10, 216);
+    background-image: url('Kie.PNG');
+    background-repeat: repeat;
+}
+
+header{
+    background-image: url('kiribati flag.jpg');
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.mylist{
+    list-style: none;
+    list-style-image: url('koro.png');
+}
+
+nav a{
+    color: blue
+}
+
+.current {
+    color: #450d74;
+}
+
+.img{
+    position: absolute;
+    right: 10px;
+    bottom: 50px;  
+}

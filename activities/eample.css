@@ -1,0 +1,53 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+header{
+    background-color: rgb(78, 185, 185);
+    text-align: center;
+    padding: 20px;
+}
+
+nav a{
+    display: flex;
+    padding: 10px;
+    background-color: blueviolet;
+    color: white;
+    margin: 10px 0;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+}
+
+.haha{
+   border: 2px solid rgb(173, 156, 156);
+   padding: 15px;
+}
+
+.haha h2{
+    margin-top: 0;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+main{
+    padding: 20px;
+}
+
+footer{
+    background-color: brown;
+    color: antiquewhite;
+    padding: 10px;
+    text-align: center;
+}
+
+footer h3{
+    margin: 10px;
+}

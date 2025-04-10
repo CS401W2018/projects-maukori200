@@ -1,0 +1,36 @@
+/* General page font */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Styling the navigation links */
+nav a {
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+    text-decoration: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+}
+
+/* Styling the header */
+header h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Styling the div tags inside MAIN */
+main .content, main .list {
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #ddd;
+}
+
+/* Optional: You can add more styling for the footer if needed */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}

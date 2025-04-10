@@ -1,0 +1,37 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+header{
+    background-color: beige;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a{
+    background-color: burlywood;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+}
+
+.move{
+    display: grid;
+    padding: 15px;
+    border: 2px solid black;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+footer{
+    text-align: center;
+}
