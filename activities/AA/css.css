@@ -1,0 +1,97 @@
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+nav {
+  background-color: #608862;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+}
+
+nav a {
+  color: rgb(223, 212, 212);
+  transition: background-color 0.3s;
+}
+
+nav a.active,
+nav a:hover {
+  background-color: #5ba05f;
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+footer{
+    text-align: center;
+}
+
+label {
+  display: block;
+  padding: 20px;
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+  
+  border: 1px solid #945f5f;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #0c290d;
+  color: rgb(245, 230, 230);
+  margin-top: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+caption {
+  caption-side: top;
+  font-weight: bolder;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+  background-color: #fdfdfd;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    width: 100%;
+    text-align: center;
+  }
+
+  main {
+    text-align: left;
+    padding: 1rem;
+  }
+
+  h1{
+    text-align: center;
+  }
+}
